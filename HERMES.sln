@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HERMES", "HERMES\HERMES.csproj", "{55D80FA2-3572-46B5-8EA7-4EC960738049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Release|iPhone.ActiveCfg = Release|iPhone
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Release|iPhone.Build.0 = Release|iPhone
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{55D80FA2-3572-46B5-8EA7-4EC960738049}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
