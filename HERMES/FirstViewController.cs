@@ -15,6 +15,8 @@ namespace HERMES
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+
+            //test comment to validate
         }
 
         public override void DidReceiveMemoryWarning()
