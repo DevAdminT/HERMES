@@ -40,5 +40,7 @@
 	<array>
 		<string>location</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App gathers location of gas fillup.</string>
 </dict>
 </plist>

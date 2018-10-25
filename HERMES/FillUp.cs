@@ -8,29 +8,52 @@ namespace HERMES
 {
     public class FillUp
     {
+        public DateTime FillUpDate { get; set; }
+        public float CarMileage { get; set; }
+        public float TripMileage { get; set; }
+        public float FillUpGallons { get; set; }
+        public float CostPerGallon { get; set; }
+        public FillUpLocation TheLocation { get; set; }
+
+
+        public FillUp(float a, float b, float c, float d, FillUpLocation e)
+        {
+            FillUpDate = DateTime.Now;
+            CarMileage = a;
+            TripMileage = b;
+            FillUpGallons = c;
+            CostPerGallon = d;
+            TheLocation = e;
+           
+        }
         public FillUp()
         {
         }
 
-        public static FillUpLocation GetCurrentLocation ()
-        {
-            CLLocationManager LocationManager = null;
-            FillUpLocation theLocation = null;
-            LocationManager.DesiredAccuracy = 1000;
-            LocationManager.UpdatedLocation += (object sender, CLLocationUpdatedEventArgs e) =>
-            {
-                theLocation = UpdateLocation(e.NewLocation);
-            };
+    }
+    public class FillUpLocation
+    {
+        public string LocationName { get; set; }
+        public string Crossroad1 { get; set; }
+        public string Crossroad2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
 
-                return theLocation;
+        public FillUpLocation(string theLocation, string the1, string the2, string theCity, string theState)
+        {
+            LocationName = theLocation;
+            Crossroad1 = the1;
+            Crossroad2 = the2;
+            City = theCity;
+            State = theState;
         }
-        static public FillUpLocation UpdateLocation(CLLocation newLocation)
-        {
-            FillUpLocation theLocation = new FillUpLocation (newLocation.Coordinate.Longitude.ToString(),
-                                                            newLocation.Coordinate.Latitude.ToString(),
-                                                            newLocation.Altitude.ToString());
 
-            return theLocation;
+        public FillUpLocation()
+        {}
+
+        public override string ToString()
+        {
+            return LocationName + " - " + Crossroad1 + " & " + Crossroad2;
         }
     }
 }
