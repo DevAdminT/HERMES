@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
+using System.Xml;
 using UIKit;
 
 namespace HERMES
@@ -19,27 +21,30 @@ namespace HERMES
 
             //test comment to validate
             List<FillUpLocation> allLocations = new List<FillUpLocation>();
+            string url = "https://raw.githubusercontent.com/DevAdminT/HERMES/master/HERMES/FillUpLocation.xml";
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.IgnoreWhitespace = true;
+            settings.IgnoreComments = true;
 
-            StreamReader sr = new StreamReader("/Users/tyleryork/Projects/DevAdminT/HERMES.git/HERMES/FillUpLocation.txt");
+            XmlReader XmlIn = XmlReader.Create(url, settings);
 
-            var line = sr.ReadLine();
-            while(line !=null)
+            if (XmlIn.ReadToDescendant("FillUpLocation"))
             {
-                FillUpLocation a = new FillUpLocation();
-                a.LocationName = line.Substring(0, line.IndexOf('|'));
-                line = line.Remove(0, line.IndexOf('|')+1);
-                a.Crossroad1 = line.Substring(0, line.IndexOf('|'));
-                line = line.Remove(0, line.IndexOf('|')+1);
-                a.Crossroad2 = line.Substring(0, line.IndexOf('|'));
-                line = line.Remove(0, line.IndexOf('|')+1);
-                a.City = line.Substring(0, line.IndexOf('|'));
-                line = line.Remove(0, line.IndexOf('|')+1);
-                a.State = line;
-                allLocations.Add(a);
-                line = sr.ReadLine();
+                do
+                {
+                    FillUpLocation a = new FillUpLocation();
+                    a.LocationName = XmlIn["Name"];
+                    XmlIn.ReadStartElement("FillUpLocation");
+                    a.Crossroad1 = XmlIn.ReadElementContentAsString();
+                    a.Crossroad2 = XmlIn.ReadElementContentAsString();
+                    a.City = XmlIn.ReadElementContentAsString();
+                    a.State = XmlIn.ReadElementContentAsString();
 
+                    allLocations.Add(a);
+                }
+                while (XmlIn.ReadToNextSibling("FillUpLocation"));
             }
-            
+            XmlIn.Close();
 
         }
 

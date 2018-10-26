@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Fill Up Location Data-->
+<FillUpLocations>
+    <FillUpLocation Name="U-Stop">
+        <Crossroad1>84th</Crossroad1>
+        <Crossroad2>Cornhusker</Crossroad2>
+        <City>Lincoln</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Kum &amp; Go">
+        <Crossroad1>120th</Crossroad1>
+        <Crossroad2>Blondo</Crossroad2>
+        <City>Omaha</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Super Saver">
+        <Crossroad1>Merchant</Crossroad1>
+        <Crossroad2>Fallbrook</Crossroad2>
+        <City>Lincoln</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Casey's">
+        <Crossroad1>Cornhusker</Crossroad1>
+        <Crossroad2>Heywood</Crossroad2>
+        <City>Waverly</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="U-Stop">
+        <Crossroad1>4th</Crossroad1>
+        <Crossroad2>Omaha</Crossroad2>
+        <City>Norfolk</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Casey's">
+        <Crossroad1>Hwy 20</Crossroad1>
+        <Crossroad2>Main</Crossroad2>
+        <City>Valentine</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Hy-Vee">
+        <Crossroad1>132nd</Crossroad1>
+        <Crossroad2>Dodge</Crossroad2>
+        <City>Omaha</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Hy-Vee">
+        <Crossroad1>84th</Crossroad1>
+        <Crossroad2>Holdredge</Crossroad2>
+        <City>Lincoln</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Casey's">
+        <Crossroad1>3rd</Crossroad1>
+        <Crossroad2>O st</Crossroad2>
+        <City>Eagle</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Casey's">
+        <Crossroad1>55th</Crossroad1>
+        <Crossroad2>Superior</Crossroad2>
+        <City>Lincoln</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Casey's">
+        <Crossroad1>9th</Crossroad1>
+        <Crossroad2>South</Crossroad2>
+        <City>Lincoln</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+    <FillUpLocation Name="Kum &amp; Go">
+        <Crossroad1>144th</Crossroad1>
+        <Crossroad2>Q st</Crossroad2>
+        <City>Omaha</City>
+        <State>Nebraska</State>
+    </FillUpLocation>
+</FillUpLocations>
